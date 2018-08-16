@@ -1,0 +1,17 @@
+JQUERY
+
+jQuery is a massive, free open source javascript library.  
+It's not a programming language.
+
+Benefits
+
+Working with DOM is easier
+Animations are easier
+Event handling is easier
+Ajax is simple....and etc.
+Allows for chaining which lets you apply different methods 
+or effects to an element in one line:
+    $(element).hide().show().css({height:25});
+plugins are available too
+    image slider plugins
+    form enhancement plugins
