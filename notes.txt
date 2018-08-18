@@ -41,3 +41,4 @@ heading[0].animate({left: 20});  //will not work!  it's unwrapped so animate won
 We can target an element on JS like so:
 $("#lead-banner p");
 
+jQuery filters always start with a colon :
