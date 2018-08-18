@@ -37,3 +37,7 @@ heading[0]
 //now it returns it unwrapped!! :)
 
 heading[0].animate({left: 20});  //will not work!  it's unwrapped so animate won't work on it anymore
+
+We can target an element on JS like so:
+$("#lead-banner p");
+
