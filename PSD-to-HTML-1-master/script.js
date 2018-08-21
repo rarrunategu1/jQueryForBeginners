@@ -40,6 +40,21 @@ $("div[class]").css({border: "2px solid pink"}); //this will add the border to a
 /*attribute with specific value
 $("img[alt=quote]").css({border: "2px solid purple"}); //will pull the img with an alt attribute equal to quote*/
 
-
-
-
+/*next
+$("#contact-methods").next().css({border: "3px solid red"}); //grabs an element and gives us the next element in line in the html structure
+*/
+/*next
+$("#social-nav").prev().css({border: "3px solid blue"}); //this one get the previous tag
+*/
+/*next
+$(".banner-title").parent().css({border: "3px solid pink"}); //this one gets the parent of the banner title class.  use parents() and you'll get all the parents of that element
+*/
+/*next
+$("#social-nav").children().css({border: "3px solid green"});  //this gets the children of the social-nav id
+*/
+/*next
+$("#contact").find(".facebook").css({border: "3px solid purple"}); //this one is going into the ID and asking to find a facebook class and give that a border
+*/
+/*closest
+$("#social-nav").closest(".wrapper").css({border: "3px solid orange"});//it goes up the DOM to find the nearest parent which has a wrapper class
+*/
