@@ -46,4 +46,15 @@ jQuery filters always start with a colon :
 What is Chaining in jQuery? a feature of jQuery that speeds up our code production by chaining multiple
 methods or functions in one line of code using the . syntax
 
+Wrapping and unwrapping using jQuery
+    - Wrapped means that there is a parent element surrounding it
+    
+    -wrapping would be used for example if you want your end user to fill out a form before hitting a submit button.
+    you'd wrap the button in a div that was styled to not be clickable until all the content was filed out
+    and then once it's filled out it would unwrap the button so that they could submit it.
+    
+To use this on a button on the html it looks like this.
 
+ <div class = "button" style="text-align:center; padding: 10px; background: orange;">Unwrap</div> <!--when i click this button i want to unwrap all the sections so that its no longer in the center and the contents expand the full width of the page-->
+
+check out the wrap section on the js file to make it work
