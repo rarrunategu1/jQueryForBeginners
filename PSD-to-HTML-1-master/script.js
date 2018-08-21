@@ -62,7 +62,7 @@ $("#social-nav").closest(".wrapper").css({border: "3px solid orange"});//it goes
 $("#contact-methods").css({border: "2px solid red"}).next().css({border: "2px solid green"}).closest("section").css({border: "2px solid blue"});//you can put these on seperate lines per element to make it more readable
 */
 
-var tweet = "<div style='margin: 20px 0; padding: 16px; backround: #eee'>The big fight live: Ham vs Cheese:</div>";
+//var tweet = "<div style='margin: 20px 0; padding: 16px; backround: #eee'>The big fight live: Ham vs Cheese:</div>";
 
 //$("#tweets div").append(tweet);// adds the tweet variable to the #tweets div at the end of it
 //$("#tweets div").prepend(tweet); // adds the tweet variable to the #tweets div at the beginning of it
@@ -79,3 +79,34 @@ var tweet = "<div style='margin: 20px 0; padding: 16px; backround: #eee'>The big
 .after() adds content after element
 .html() changes the whole html of the element
 .text() changes the text of an element */
+
+/*$("section").wrap("<div>"); //wraps every section tag individually in a div tag
+$("section").unwrap(); //you don't need to put in the div tag because it'll just remove it's immediate parent element automatically
+$("section").wrapAll("<div>"); //wraps all of the section together in one div
+*/
+
+/*
+wrap() - wraps all matched elements individually
+unwrap() - unwraps all matched elements
+wrapAll() - wraps all elements combined with 1 single element
+*/
+
+//lets work it on a button
+//create some variables:
+
+/*var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
+
+button[0].onclick = function(){
+  if (wrapped){
+    $("section").unwrap();
+    wrapped = false;
+    button.text("wrap");
+  } else {
+    $("section").wrapAll(wrapper);
+    wrapped = true;
+    button.text("unwrap");
+  }
+};
+*/
