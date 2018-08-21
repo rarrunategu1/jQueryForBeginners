@@ -61,3 +61,21 @@ $("#social-nav").closest(".wrapper").css({border: "3px solid orange"});//it goes
 /*
 $("#contact-methods").css({border: "2px solid red"}).next().css({border: "2px solid green"}).closest("section").css({border: "2px solid blue"});//you can put these on seperate lines per element to make it more readable
 */
+
+var tweet = "<div style='margin: 20px 0; padding: 16px; backround: #eee'>The big fight live: Ham vs Cheese:</div>";
+
+//$("#tweets div").append(tweet);// adds the tweet variable to the #tweets div at the end of it
+//$("#tweets div").prepend(tweet); // adds the tweet variable to the #tweets div at the beginning of it
+//$("#tweets div p").before(tweet);
+//$("#tweets div p").before(tweet);
+//$("#tweets div").html(tweet); //replaces the tweets div with the tweet variable info
+//$("#tweets div p").text(tweet); // this will actually replace the div p with the tweet variable completely.  YOu have to change the variable so that there is no code but only text in it for this feature
+
+/*ADDING & CHANGING CONTENT
+
+.append() adds content to bottom of element
+.prepend() adds content to the top of element
+.before() adds content before element
+.after() adds content after element
+.html() changes the whole html of the element
+.text() changes the text of an element */
