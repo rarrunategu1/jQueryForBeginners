@@ -42,3 +42,8 @@ We can target an element on JS like so:
 $("#lead-banner p");
 
 jQuery filters always start with a colon :
+
+What is Chaining in jQuery? a feature of jQuery that speeds up our code production by chaining multiple
+methods or functions in one line of code using the . syntax
+
+

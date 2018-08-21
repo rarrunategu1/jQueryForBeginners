@@ -58,3 +58,6 @@ $("#contact").find(".facebook").css({border: "3px solid purple"}); //this one is
 /*closest
 $("#social-nav").closest(".wrapper").css({border: "3px solid orange"});//it goes up the DOM to find the nearest parent which has a wrapper class
 */
+/*
+$("#contact-methods").css({border: "2px solid red"}).next().css({border: "2px solid green"}).closest("section").css({border: "2px solid blue"});//you can put these on seperate lines per element to make it more readable
+*/
