@@ -110,3 +110,15 @@ button[0].onclick = function(){
   }
 };
 */
+//removing content
+
+//$(".button").empty(); //empties what's inside the button
+/*$("#points-of-sale").empty();
+
+$(".button").remove(); //removes the entire button
+$("#contact img").remove(); //removes the entire image
+*/
+/*
+.empty() - empties the inner HTML of an element
+.remove() - removes the element completely*/
+
