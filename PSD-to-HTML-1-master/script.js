@@ -122,3 +122,13 @@ $("#contact img").remove(); //removes the entire image
 .empty() - empties the inner HTML of an element
 .remove() - removes the element completely*/
 
+//CHANGING ATTRIBUTES
+
+//$("#contact img").removeAttr("alt"); //removes the attribute
+//$("#contact img").attr("alt", "location"); //changes the alt to location
+//console.log($("#contact img").attr("alt")); //will read print out the alt attribute
+
+
+/*
+.removeAttr() removes an atttribute completely
+.attr() can read or set any attribute */
