@@ -223,7 +223,7 @@ $(window).on("load", function(){ //will load the page after the images are ready
 
 
 //EVENTOBJECT
-$(document).ready(function(){
+/*$(document).ready(function(){
   $("*").on("click", function(e){  // ("*") will grab every element on the page, e is the event object
    console.log(e.target); //brings back the target or element that I clicked.
    console.log("The event type is: " + e.type); //will print out what the event type is
@@ -234,4 +234,21 @@ $(document).ready(function(){
   });
   
   //X and Y coordinates are good for an interactive game, in case you want to check where the users clicked.
+*/
 
+//JQUERY ANIMATIONS
+
+//built in low level animation
+$(function(){
+function complete() {
+    alert("Animation complete");
+}
+
+$("section > h2").on("click", function(){
+  $(this).animate({"width" : "500px", "height" : "100px"}, 1000, 
+  "linear", complete);  //can only animate properties that have a numerical value.  font-family is not something you can change
+ // the second parameter, 1000 is the timing it takes in it's animation.  The third parameter takes swing or linear which is about the velocity of the animation, throughtout the animation.
+ //4th parameter is a function
+
+});
+});
