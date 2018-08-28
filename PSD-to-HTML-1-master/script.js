@@ -239,7 +239,7 @@ $(window).on("load", function(){ //will load the page after the images are ready
 //JQUERY ANIMATIONS
 
 //built in low level animation
-$(function(){
+/*$(function(){
 function complete() {
     alert("Animation complete");
 }
@@ -251,4 +251,20 @@ $("section > h2").on("click", function(){
  //4th parameter is a function
 
 });
-});
+});*/
+
+//FADING ELEMENTS IN AND OUT
+/*$(function(){
+  $("section > h2").on("click", function(){
+    $(this).animate({"opacity" : "0.5"});  // change opacity of h2 
+  });
+});*/
+
+// instead of using the animate above we can use .fadeOut Method
+$(function(){
+  $("section > h2").on("click", function(){
+    $(this).fadeOut(2000).fadeIn(500).fadeTo(1000, 0.2);  //will fade out and then fade in. the numbers are the time it takes to fade in or out.
+  }); //fadeTo takes 2 parameters.  first is the time and 2nd is the opacity
+});  
+
+//if you fadeTo 200, 0.2 and chain another fadeTo 200, 0.8 and keep chaining those two over and over again it cause a flash look
