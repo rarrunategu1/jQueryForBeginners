@@ -187,9 +187,36 @@ myLis.on("click", function() {
 $("#lead-banner").on("click", function(){
   
 }); into this: */
-$("#lead-banner").click(function(){ //using .dblclick will give the alert on a double click
+/*$("#lead-banner").click(function(){ //using .dblclick will give the alert on a double click
   alert("you clicked me");
   $("#lead-banner").off("dblclick"); //unbinds the doubleclick
 });
-
+*/
 //Link to a list of events/event helpers - https://www.w3schools.com/jquery/jquery_ref_events.asp
+ 
+//DOCUMENT READY FUNCTION
+
+/* $(document).on("ready", function(){
+  
+});
+  $(document).ready(function(){
+  
+});
+
+  $(function(){
+  
+});
+
+All three above functions are the same with $(function(){
+  
+}); as the shortest possible option */
+
+$(function(){
+  
+});
+
+//WINDOW ON LOAD EVENT
+
+$(window).on("load", function(){ //will load the page after the images are ready
+  
+}) //shorthand would be $(window).load(function()
