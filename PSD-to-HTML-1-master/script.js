@@ -211,7 +211,7 @@ All three above functions are the same with $(function(){
   
 }); as the shortest possible option */
 
-$(function(){
+/*$(function(){
   
 });
 
@@ -219,4 +219,19 @@ $(function(){
 
 $(window).on("load", function(){ //will load the page after the images are ready
   
-}) //shorthand would be $(window).load(function()
+}) //shorthand would be $(window).load(function() */
+
+
+//EVENTOBJECT
+$(document).ready(function(){
+  $("*").on("click", function(e){  // ("*") will grab every element on the page, e is the event object
+   console.log(e.target); //brings back the target or element that I clicked.
+   console.log("The event type is: " + e.type); //will print out what the event type is
+   console.log("x co-ordinate of the event is: " + e.pageX); //gives the X coordinate of where you clicked in px form
+   console.log("y co-ordinate of the event is: " + e.pageY); //gives y coordinate of where you clicked
+   e.stopPropagation(); //will stop the event from bubbling up so that you get the event type of the first element only
+  }); //
+  });
+  
+  //X and Y coordinates are good for an interactive game, in case you want to check where the users clicked.
+
