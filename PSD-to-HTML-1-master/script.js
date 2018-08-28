@@ -280,10 +280,33 @@ $("section > h2").on("click", function(){
 });
 */
 //toggle
-
+/*
 $(function(){
   $("img[alt=map]").on("click", function(){
     $("section > h2").toggle(1000); // //toggle(1000) of the h2 element also makes it disappear in the code above
     //this code will make the h2 button disappear when the map is clicked
   });
+}); */
+
+//SLIDING ELEMENTS
+//they do not slide up or down,  they just hide thing in an upward or downward fashion
+
+/*$(function(){
+  $(".slide-button-up").on("click", function(){
+    $("#lead-banner").slideUp(); //you can enter number in slide up or down for seconds to perform animation, the 2nd parameter can take a function
+  });
 });
+
+
+$(function(){
+  $(".slide-button-down").on("click", function(){
+    $("#lead-banner").slideDown();
+  });
+}); */
+
+$(function(){
+  $(".slide-button-up").on("click", function(){
+    $("#lead-banner").slideToggle(); //will do the opposite animation when clicked again.
+  });
+});
+
