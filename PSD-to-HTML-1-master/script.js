@@ -135,16 +135,38 @@ $("#contact img").remove(); //removes the entire image
 
 //CONTROLLING CSS
 
-console.log($("#social-nav").css("position")); //Check css properties already given - you can remove console.log unless you want to see your result in the console
-console.log($("#social-nav").css("position", relative));  //changes the value of position to relative
-console.log($("#social-nav").css("position", relative).css("left", "100px").css("color", "red")); //this keeps changing css in a chaining method. you can go on and on
+//console.log($("#social-nav").css("position")); //Check css properties already given - you can remove console.log unless you want to see your result in the console
+//console.log($("#social-nav").css("position", relative));  //changes the value of position to relative
+//console.log($("#social-nav").css("position", relative).css("left", "100px").css("color", "red")); //this keeps changing css in a chaining method. you can go on and on
 
 //if you're changing a lot of values, instead of making a long, hard to read chain, just pass through an object to the CSS method
 
-$("#social-nav").css({
+/*$("#social-nav").css({
   "top": "-400px",
   "left": "150px",
   "opacity": "0.5",
   "border-top": "4px solid red" //notice how it looks like an object inside of css
-});  
+}); */ 
+
+//WORKING WITH CLASSES
+
+//remove class
+//$("header .wrapper").removeClass("wrapper"); //get the class of wrapper in the header tag and removes it
+
+//add class
+//$("header > div").addClass("wrapper"); //this means, get the div directly under the header and give it a class of wrapper.
+
+//toggle class
+//note - css file has .open{ height: auto : !important;
+//note - index file has style = "height: 0; overflow: hidden"> on line 42 of js file
+//now we want to click the button and toggle the classes
+
+//grab the button
+var button = $("#lead-banner a");
+
+//unwrap it by specifying which object you want in that array button[0]
+button[0].onclick = function() {
+ $("#points-of-sale").toggleClass("open");
+return false; //stops the anchor tag from removing the button by default 
+};
 
