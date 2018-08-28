@@ -261,10 +261,29 @@ $("section > h2").on("click", function(){
 });*/
 
 // instead of using the animate above we can use .fadeOut Method
-$(function(){
+/*$(function(){
   $("section > h2").on("click", function(){
     $(this).fadeOut(2000).fadeIn(500).fadeTo(1000, 0.2);  //will fade out and then fade in. the numbers are the time it takes to fade in or out.
   }); //fadeTo takes 2 parameters.  first is the time and 2nd is the opacity
 });  
 
 //if you fadeTo 200, 0.2 and chain another fadeTo 200, 0.8 and keep chaining those two over and over again it cause a flash look
+*/
+
+//HIDE AND SHOW ELEMENTS
+
+/*$(function(){
+  $("section > h2").on("click", function(){
+    $(this).hide(1000).show(1000); // just adding hide(); will remove the element.
+    //hide(1000); will hide it in 1 second by zooming it to the left and away
+  });
+});
+*/
+//toggle
+
+$(function(){
+  $("img[alt=map]").on("click", function(){
+    $("section > h2").toggle(1000); // //toggle(1000) of the h2 element also makes it disappear in the code above
+    //this code will make the h2 button disappear when the map is clicked
+  });
+});
