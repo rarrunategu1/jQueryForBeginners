@@ -162,11 +162,22 @@ $("#contact img").remove(); //removes the entire image
 //now we want to click the button and toggle the classes
 
 //grab the button
-var button = $("#lead-banner a");
+//var button = $("#lead-banner a");
 
 //unwrap it by specifying which object you want in that array button[0]
-button[0].onclick = function() {
+/*button[0].onclick = function() {
  $("#points-of-sale").toggleClass("open");
 return false; //stops the anchor tag from removing the button by default 
-};
+}; */
 
+//BINDING EVENTS - OFF AND ON
+
+//We'll bind some events to li tags so when someone clicks it, it will highlight
+// grab the li tags and store into a var
+
+var myLis = $("#points-of-sale li");
+myLis.on("click", function() {
+  $(this).css({"background": "pink"});
+  myLis.off("click"); //unbinds the click so if you click one it turns pink but another one being clicked doesn't work
+  
+});
