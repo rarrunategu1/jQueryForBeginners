@@ -132,3 +132,19 @@ $("#contact img").remove(); //removes the entire image
 /*
 .removeAttr() removes an atttribute completely
 .attr() can read or set any attribute */
+
+//CONTROLLING CSS
+
+console.log($("#social-nav").css("position")); //Check css properties already given - you can remove console.log unless you want to see your result in the console
+console.log($("#social-nav").css("position", relative));  //changes the value of position to relative
+console.log($("#social-nav").css("position", relative).css("left", "100px").css("color", "red")); //this keeps changing css in a chaining method. you can go on and on
+
+//if you're changing a lot of values, instead of making a long, hard to read chain, just pass through an object to the CSS method
+
+$("#social-nav").css({
+  "top": "-400px",
+  "left": "150px",
+  "opacity": "0.5",
+  "border-top": "4px solid red" //notice how it looks like an object inside of css
+});  
+
