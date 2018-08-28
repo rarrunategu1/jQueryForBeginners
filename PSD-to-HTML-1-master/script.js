@@ -175,9 +175,21 @@ return false; //stops the anchor tag from removing the button by default
 //We'll bind some events to li tags so when someone clicks it, it will highlight
 // grab the li tags and store into a var
 
-var myLis = $("#points-of-sale li");
+/*var myLis = $("#points-of-sale li");
 myLis.on("click", function() {
   $(this).css({"background": "pink"});
   myLis.off("click"); //unbinds the click so if you click one it turns pink but another one being clicked doesn't work
   
+}); */
+
+//EVENT HELPERS
+/*jQuery allows us to turn this:
+$("#lead-banner").on("click", function(){
+  
+}); into this: */
+$("#lead-banner").click(function(){ //using .dblclick will give the alert on a double click
+  alert("you clicked me");
+  $("#lead-banner").off("dblclick"); //unbinds the doubleclick
 });
+
+//Link to a list of events/event helpers - https://www.w3schools.com/jquery/jquery_ref_events.asp
