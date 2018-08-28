@@ -302,11 +302,39 @@ $(function(){
   $(".slide-button-down").on("click", function(){
     $("#lead-banner").slideDown();
   });
-}); */
+}); 
 
 $(function(){
   $(".slide-button-up").on("click", function(){
     $("#lead-banner").slideToggle(); //will do the opposite animation when clicked again.
   });
 });
+*/
 
+//FADING ANIMATION ON A BLOCK WITH QUOTES
+//We will grab the quote, fade it out and put a new one and fade that one and put another.
+
+
+$(function(){
+  
+  var allQuotes = $("blockquote");
+  var currentQuote = 0;
+  
+  function changeQuote(){
+    $(allQuotes[currentQuote]).fadeOut(200, function(){
+      
+    
+    if(currentQuote == allQuotes.length -1) {  //allQuotes.length-1 is to consider all quotes because it's based on position starting with 0
+      currentQuote = 0;  //this will begin the quotes from the beginning when it's done going through all the quotes
+    } else {
+      currentQuote++; //this will continue going through the quotes till it's at the last one
+    }
+    $(allQuotes[currentQuote]).fadeIn(200);
+    
+  
+  });
+  }
+  //to call it the regular javascript below will work.
+  //quoteTimer has a setInterval to changeQuote every 3 seconds
+  var quoteTimer = setInterval(changeQuote, 3000);
+});
