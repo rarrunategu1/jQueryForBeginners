@@ -315,7 +315,7 @@ $(function(){
 //We will grab the quote, fade it out and put a new one and fade that one and put another.
 
 
-$(function(){
+/*$(function(){
   
   var allQuotes = $("blockquote");
   var currentQuote = 0;
@@ -338,3 +338,26 @@ $(function(){
   //quoteTimer has a setInterval to changeQuote every 3 seconds
   var quoteTimer = setInterval(changeQuote, 3000);
 });
+*/
+
+//CLICK TO EXPAND ANIMATION EXAMPLE
+
+/* <li>
+                        <img src="images/cs-1.png" alt="web design">
+                        <h3>Web Design</h3>
+                        <p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+                    </li>
+                    
+*/
+
+//Hide the p tags in the li element, and have an onclick function that shows and hides them.
+
+$(function(){
+  
+  var items = $("#points-of-sale li");
+  items.on("click", function(){  //this binds the items to the click event
+  $(this).find("p").slideToggle(5000);
+    
+  })
+});
+
