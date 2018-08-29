@@ -352,12 +352,20 @@ $(function(){
 
 //Hide the p tags in the li element, and have an onclick function that shows and hides them.
 
-$(function(){
+/*$(function(){
   
   var items = $("#points-of-sale li");
   items.on("click", function(){  //this binds the items to the click event
   $(this).find("p").slideToggle(5000);
     
   })
+}); */
+
+//USING PLUGINS TO EXTEND JQUERYS USAGE
+
+$(document).ready(function(){
+  
+  $(".rslides").responsiveSlides();
+  
 });
 
