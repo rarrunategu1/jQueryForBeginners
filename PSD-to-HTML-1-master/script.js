@@ -369,3 +369,21 @@ $(document).ready(function(){
   
 });
 
+
+
+/*notes - research jQuery UI for:
+datepickers
+draggable elements
+sortable elements
+resizeable elements, and more
+
+jQuery with AJAX
+-communicates with a server and load data into a page without refreshing
+  google maps
+  traffic updates
+  
+jQuery Plugins
+-Other great plugins available
+-how to create your own plugins.
+
+*/
